@@ -31,9 +31,7 @@
      (<= 
        block-height
        (default-to u0 (get end-time (map-get? conference-end (tuple (id conference-id)))))
-      )
-     )
-  )
+      )))
 
   ;; checks that conference has not ended yet
   (define-private (has-ended (conference-id int))
